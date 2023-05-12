@@ -1,0 +1,41 @@
+.container {
+  max-width: 1212px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+.shadowed {
+  @include shadowed;
+}
+.btn-reset {
+  @include btn-reset;
+}
+.stop-scroll {
+  @include stop-scroll;
+}
+.burger {
+  @include burger-menu;
+}
+.burger-rotate {
+  & span {
+    transform: scale(0);
+  }
+  &::before {
+    top: 50%;
+    transform: translate(0, -50%);
+    transform: rotate(45deg);
+  }
+  &::after {
+    top: 50%;
+    transform: translate(0, -50%);
+    transform: rotate(-45deg);
+  }
+}
+.shadowed-active {
+  display: block;
+}
+
+@media screen and (max-width: 992px) {
+  :root {
+    font-size: 8px;
+  }
+}
