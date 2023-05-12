@@ -1,5 +1,5 @@
 .order {
-  background-image: url('../../images/order-bg.jpg');
+  background-image: url('../images/order-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   &__wrapper {
@@ -35,7 +35,7 @@
     width: 20%;
     &:not(:last-child) {
       .order__item-image::before {
-        content: url('../../images/dots.png');
+        content: url('../images/dots.png');
         position: absolute;
         top: 50%;
         right: -13rem;
