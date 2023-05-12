@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOREMIPSUM.NET</title>
+    <link rel="stylesheet" href="css/style.min.css?_v=20230512212014" />
+    <script src="js/app.min.js?_v=20230512212014" defer></script>
+  </head>
+  <body>
+    <header class="header" id="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <div class="header__logo">LoremIpsum.<span>Net</span></div>
+      <ul class="header__nav">
+        <li class="header__nav-item"><a class="header__nav-link header__nav-link_active" href="#">Бизнес</a></li>
+        <li class="header__nav-item"><a class="header__nav-link" href="#">О нас</a></li>
+        <li class="header__nav-item"><a class="header__nav-link" href="#">Цены</a></li>
+        <li class="header__nav-item"><a class="header__nav-link" href="#">Оформить заказ</a></li>
+      </ul>
+      <div class="header__burger burger"><span></span></div>
+    </div>
+  </div>
+</header>
+
+    <main><section class="firstscreen" id="firstscreen">
+  <div class="container">
+    <div class="firstscreen__content">
+      <h1 class="firstscreen__title"><span>Lorem ipsum</span> dolor sit ametconsectetur <span>adipiscing</span></h1>
+      <div class="firstscreen__info">
+        <h3 class="firstscreen__info-title">At vero eos et accusamus et iusto odio dignissimos ducimus!</h3>
+        <ul class="firstscreen__info-items">
+          <li class="firstscreen__info-item">Totam rem aperiam eaque ipsa</li>
+          <li class="firstscreen__info-item">Sit voluptatem accusantium doloremque laudantium</li>
+          <li class="firstscreen__info-item">Sed ut perspiciatis, unde omnis iste natus error</li>
+        </ul>
+      </div>
+      <div class="firstscreen__buttons">
+        <button class="firstscreen__button firstscreen__button_colored btn-reset">заказать</button>
+        <button class="firstscreen__button firstscreen__button_white btn-reset">подробнее</button>
+      </div>
+    </div>
+  </div>
+</section>
+ <section class="order" id="order">
+  <div class="container">
+    <div class="order__wrapper">
+      <h2 class="order__title">Оформление <span>Заказа</span></h2>
+      <p class="order__subtitle">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+      <div class="order__items">
+        <div class="order__item">
+          <div class="order__item-image">
+            <img src="../images/order-item-img-1.svg" alt="image" />
+          </div>
+          <span class="order__item-title">Lorem ipsum dolor sit amet</span>
+        </div>
+        <div class="order__item">
+          <div class="order__item-image">
+            <img src="../images/order-item-img-2.svg" alt="image" />
+          </div>
+          <span class="order__item-title">Сonsecteturadipiscing elit</span>
+        </div>
+        <div class="order__item">
+          <div class="order__item-image">
+            <img src="../images/order-item-img-3.svg" alt="image" />
+          </div>
+          <span class="order__item-title">Sed do eiusmod tempor</span>
+        </div>
+        <div class="order__item">
+          <div class="order__item-image">
+            <img src="../images/order-item-img-4.svg" alt="image" />
+          </div>
+          <span class="order__item-title">Esse cillum dolore eu fugiat</span>
+        </div>
+        <div class="order__item">
+          <div class="order__item-image">
+            <img src="../images/order-item-img-5.svg" alt="image" />
+          </div>
+          <span class="order__item-title">Excepteur sint occaecat cupidatat non proident</span>
+        </div>
+      </div>
+      <form class="order__form">
+        <div class="order-form__items">
+          <div class="itc-select" id="select-1">
+            <button type="button" class="itc-select__toggle" name="car" value="" data-select="toggle" data-index="-1">
+              Выберите тип системы
+            </button>
+            <div class="itc-select__dropdown">
+              <ul class="itc-select__options">
+                <li class="itc-select__option" data-select="option" data-value="Sed ut perspiciatis" data-index="0">
+                  Sed ut perspiciatis
+                </li>
+                <li class="itc-select__option" data-select="option" data-value="Nemo enim ipsam" data-index="1">
+                  Nemo enim ipsam
+                </li>
+                <li class="itc-select__option" data-select="option" data-value="Et harum quidem" data-index="2">
+                  Et harum quidem
+                </li>
+                <li class="itc-select__option" data-select="option" data-value="Temporibus autem" data-index="3">
+                  Temporibus autem
+                </li>
+                <li class="itc-select__option" data-select="option" data-value="Itaque earum rerum" data-index="3">
+                  Itaque earum rerum
+                </li>
+              </ul>
+            </div>
+          </div>
+          <input class="order-form__input" type="email" name="email" placeholder="Ваш e-mail" />
+          <input class="order-form__input" type="text" name="name" placeholder="Ваше имя" />
+          <div class="order-form__range">
+            <div class="order-form__range-header">
+              <span class="order-form__range-title">Sed ut perspiciatis, unde omnis iste natus</span>
+              <span class="order-form__range-value">75 %</span>
+            </div>
+            <input class="input-range" type="range" min="0" max="100" value="75" name="range" step="1" />
+          </div>
+          <div class="order-form__input-file">
+            <input class="input-file" type="file" id="input-file" name="file" />
+            <label for="input-file">
+              <img src="../images/file.svg" alt="file" />
+              <span class="input-file_text">Прикрепить файл</span>
+            </label>
+          </div>
+        </div>
+        <button class="order-form__button btn-reset" type="submit">Отправить</button>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+    <footer class="footer" id="footer">
+  <div class="container">
+    <div class="footer__wrapper">
+      <div class="footer__info">© 2018 «LoremIpsum.net» Все права защищены.</div>
+      <div class="footer__payments">
+        <div class="footer__payments-item">
+          <img src="../images/payment-1.svg" alt="payment system" />
+          <span>Qiwi wallet</span>
+        </div>
+        <div class="footer__payments-item">
+          <img src="../images/payment-2.svg" alt="payment system" />
+          <span>Yandex Money</span>
+        </div>
+        <div class="footer__payments-item">
+          <img src="../images/payment-3.svg" alt="payment system" />
+          <span>Web Money</span>
+        </div>
+      </div>
+      <div class="footer__links">
+        <a class="footer__link" href="mailto:info@ipsum228.com">
+          <img src="../images/link-footer-1.svg" alt="mail" />
+          info@ipsum228.com
+        </a>
+        <a class="footer__link" href="https://vk.com/" target="_blank">
+          <img src="../images/link-footer-2.svg" alt="VK" />
+          Мы вконтакте
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>
